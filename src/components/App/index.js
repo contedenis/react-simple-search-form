@@ -1,11 +1,14 @@
 import React from 'react';
+
+import Main from '../Main';
+
 import './styles.scss';
 
 function App() {
   return (
-    <main className="main">
-      <div>main</div>
-    </main>
+    <Main>
+      <div>Main</div>
+    </Main>
   );
 }
 
