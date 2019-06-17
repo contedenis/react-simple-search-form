@@ -1,6 +1,6 @@
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
 import rootReducer from './rootReducer';
-import { createStore, applyMiddleware, compose } from 'redux'
-import thunk from 'redux-thunk'
 
 export default function configureStore(initialState = {}) {
   /* eslint-disable no-underscore-dangle, no-undef */
@@ -8,13 +8,13 @@ export default function configureStore(initialState = {}) {
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
     : compose;
   /* eslint-enable */
-  const store = createStore (
+  const store = createStore(
     rootReducer,
     initialState,
     composeEnhancers(
-      applyMiddleware(thunk)
-    )
-  )
+      applyMiddleware(thunk),
+    ),
+  );
 
   return { store };
 }
