@@ -1,4 +1,21 @@
 .dashboard {
   height: 100%;
   padding: 20px 40px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__container-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+  }
+
+  &__input {
+    margin-right: 20px;
+    border-radius: 3px;
+  }
 }
