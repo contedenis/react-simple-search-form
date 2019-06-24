@@ -1,33 +1,37 @@
+// @ packages
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
+import { Button } from 'semantic-ui-react';
 
+// @ own
 import './styles.scss';
 
-function Button({
+function SendButton({
   children,
   className,
-  // onClick,
+  onClick,
 }) {
   return (
-    <button
+    <Button
       className={cn('button', className)}
-      // onClick={onClick}
-      type="submit"
+      color="green"
+      onClick={onClick}
+      type="button"
     >
       {children}
-    </button>
+    </Button>
   );
 }
 
-Button.defaultProps = {
+SendButton.defaultProps = {
   className: '',
 };
 
-Button.propTypes = {
+SendButton.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  // onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
-export default Button;
+export default SendButton;

@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 
+// import semantic css
+import 'semantic-ui-css/semantic.min.css';
 import './index.css';
 import routes from './routes';
 import configureStore from './store/configureStore';

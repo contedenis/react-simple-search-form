@@ -1,7 +1,10 @@
+// @ packages
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
+import { Dropdown } from 'semantic-ui-react';
 
+// @ own
 import './styles.scss';
 
 function InputSelect({
@@ -12,18 +15,14 @@ function InputSelect({
   value,
 }) {
   return (
-    <select
+    <Dropdown
       className={cn('input-select', className)}
-      onChange={e => onChange(e.target.value)}
-      type="select"
+      clearable
+      onChange={onChange}
+      options={options}
+      placeholder={placeholder}
       value={value || ''}
-    >
-      <option hidden>{placeholder}</option>
-      {options.length > 0 && options.map((option, key) => (
-        <option key={key} value={option.value}>{option.displayValue}</option>
-      ))
-      }
-    </select>
+    />
   );
 }
 

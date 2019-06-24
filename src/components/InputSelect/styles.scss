@@ -1,6 +1,17 @@
 .input-select {
+  align-items: center;
+  background: white;
   border: 0;
+  display: flex !important;
   height: 50px;
-  padding: 10px 0 10px 10px;
+  padding: 10px;
   width: 100%;
+
+  & > * {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 40px;
+  }
 }
