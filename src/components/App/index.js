@@ -1,8 +1,11 @@
+// @ packages
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// @ app
 import Main from '../Main';
 
+// @ own
 import './styles.scss';
 
 function App({ children }) {

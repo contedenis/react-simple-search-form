@@ -15,7 +15,16 @@
   }
 
   &__input {
-    margin-right: 20px;
     border-radius: 3px;
+    margin-right: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    &__container-input {
+      flex-direction: column;
+    }
+    &__input {
+      margin-bottom: 10px;
+    }
   }
 }
