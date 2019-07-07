@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cn from 'classnames';
+import { noop } from 'lodash';
 import { Icon, Input } from 'semantic-ui-react';
 
 // @ own
@@ -39,6 +40,8 @@ InputSearch.defaultProps = {
   max: null,
   min: null,
   name: '',
+  onChange: noop,
+  onDelete: noop,
   pattern: '',
   placeholder: 'Type here..',
   type: 'search',
@@ -50,8 +53,8 @@ InputSearch.propTypes = {
   max: PropTypes.number,
   min: PropTypes.number,
   name: PropTypes.string,
-  onChange: PropTypes.func.isRequired,
-  onDelete: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
+  onDelete: PropTypes.func,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,
   type: PropTypes.string,

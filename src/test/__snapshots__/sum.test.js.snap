@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputSearch /> calls the onChange function 1`] = `ReactWrapper {}`;
+
+exports[`<InputSearch /> calls the onDelete function 1`] = `ReactWrapper {}`;
+
+exports[`<InputSearch /> calls the onDelete function 2`] = `ReactWrapper {}`;
+
+exports[`<InputSearch /> change value correctly 1`] = `ReactWrapper {}`;
+
+exports[`<Table /> rendering of cell values 1`] = `ReactWrapper {}`;
+
+exports[`<Table /> rendering of empty values 1`] = `ReactWrapper {}`;
+
+exports[`<Table /> rendering of empty values 2`] = `ReactWrapper {}`;
+
+exports[`<Table /> rendering of header values 1`] = `ReactWrapper {}`;
+
+exports[`<Title /> render children 1`] = `ReactWrapper {}`;
